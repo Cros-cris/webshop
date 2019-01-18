@@ -1,5 +1,3 @@
-
-
 <div class="bs-component">
               <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <a class="navbar-brand" href="index.php">GroenteBoer</a>
@@ -12,19 +10,18 @@
                     <li class="nav-item">
                       <a class="nav-link" href="index.php">Home</a>
                     </li>
+
                     <li class="nav-item">
-                    <a class="nav-link" href="form.php">registreer</a>
-                  </li>
+                      <a class="nav-link" href="toonbestellingen.php">Mijn bestellingen</a>
+                    </li>
                   </ul>
                   <div class="inlog form m-4">
-                  <form class="form-inline my-2 my-lg-0" action="login.php" method="post">
-                    <input class="form-control mr-sm-2" type="text" name="email" value="" placeholder="email...">
-                    <input class="form-control mr-sm-2" type="password" name="wachtwoord" value="" placeholder="wachtwoord...">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">login</button>
+                  <form class="form-inline my-2 my-lg-0" action="loguit.php" method="post">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="loguit">loguit</button>
                   </form>
                 </div>
                 <div class="Search">
-                  <form class="form-inline my-2 my-lg-0" action="index.php">
+                  <form class="form-inline my-2 my-lg-0" action="ussersession.php">
                     <input name="naamfilter" class="form-control mr-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                   </form>

@@ -2,9 +2,10 @@
 session_start();
 $email = $_POST['email'];
 $wachtwoord = $_POST['wachtwoord'];
-echo "hallo";
+
 if ($email != null && $wachtwoord != null) {
-  // code...
+
+      echo "Username or Password is invalid";
 
 
 try {
@@ -14,10 +15,10 @@ try {
 
 $stmt = $conn->query($sql);
 while ($row = $stmt->fetch()) {
-  if ($row['email'] == $email) {
-  $_SESSION['login_email']=$email; // Initializing Session
-  echo "je bent ingelogt";
-  //header("location: index.php"); // Redirecting To Other Page
+  if ($row['email'] == $email && $row['wachtwoord'] == $wachtwoord) {
+  $_SESSION['current_user']=$email;
+  header("location: usersession.php"); // Redirecting To Other Page
+
   }
   else {
   echo "Username or Password is invalid";
@@ -37,4 +38,3 @@ catch(PDOException $e) {
 $conn = NULL;
 }
 ?>
-eind doc

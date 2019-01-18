@@ -1,14 +1,15 @@
-
 <?php
 session_start();
-include("head.php");
- ?>
+$email = $_SESSION['current_user'];
+print "je bent ingelogt als" . " " . $email;
 
+include("head.php");
+?>
 <body>
 
 <?php
 
-  include("navbar.php");
+  include("inlognav.php");
 
   ?>
 
