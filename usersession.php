@@ -24,7 +24,6 @@ include("head.php");
   <div class="input-group">
 
 
-  <a href="index.html" class="btn btn-info">Product toevoegen</a>
 
   </div><!-- /input-group -->
 
@@ -47,8 +46,6 @@ try {
 	while ($row = $stmt->fetch()) {
     echo "<tr>";
     echo "<td>" . $row['naam'] . "</td><td>" . $row['prijs'] . "</td>";
-		echo "<td><a href='dbproductverwijderen.php?productid=" . $row['id'] . "'><button type='button' class='btn btn-danger btn-sm'>verwijderen</button></a></td> ";
-    echo "<td><a href='dbproductbewerken.php?productid=" . $row['id'] . "'><button type='button' class='btn btn-primary  btn-sm'>Wijzigen</button></a></td>";
     echo "<td><a href='koopproduct.php?productid=" . $row['id'] . "'><button type='button' class='btn btn-success  btn-sm'>Kopen</button></a></td>";
 
 		echo "</tr>";

@@ -15,5 +15,5 @@ catch(PDOException $e) {
 }
 
 $conn = NULL;
-header("Location: index.php");
+header("Location: admin.php");
 ?>
